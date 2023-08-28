@@ -34,7 +34,7 @@ function cargar(){
 }
 
 async function loadData() {
-  const response = await fetch("https://thingproxy.freeboard.io/fetch/https://www.mk8dx-lounge.com/PlayerDetails/17051/");
+  const response = await fetch("https://cryptic-headland-94862.herokuapp.com/https://www.mk8dx-lounge.com/PlayerDetails/17051/");
   let text = await response.text();
   
 const datos = text.split("<dd");
