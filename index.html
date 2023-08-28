@@ -35,12 +35,7 @@ function cargara(){
 
 async function loadData() {
 
-  const response = await fetch("https://corsproxy.io/?https%3A%2F%2Fwww.mk8dx-lounge.com%2FPlayerDetails%2F17051", {
-	        'mode': 'no-cors',
-	        'headers': {
-            	'Access-Control-Allow-Origin': '*',
-        	}
-    	});
+  const response = await fetch("https://corsproxy.io/?https%3A%2F%2Fwww.mk8dx-lounge.com%2FPlayerDetails%2F17051");
   let text = await response.text();
   
 const datos = text.split("<dd");
